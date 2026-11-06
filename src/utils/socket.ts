@@ -43,7 +43,9 @@ class SocketClient {
       };
 
       this.ws.onerror = () => {
-        this.ws?.close();
+        try {
+          this.ws?.close();
+        } catch (_) {}
       };
     } catch (e) {
       this.scheduleReconnect();

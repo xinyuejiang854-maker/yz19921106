@@ -41,23 +41,23 @@ export const DoudizhuGame: React.FC = () => {
       {
         id: 'p0',
         name: profile?.nickname || '星河小紫米 (我)',
-        avatar: profile?.avatar || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=128&q=80',
+        avatar: profile?.avatar || 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Yang_Zi_at_Ryo_band_promotion%2C_Wuhan_of_China%2C_12_April_2019.jpg',
         isBot: false,
         hand: p1Hand,
         isLandlord: false
       },
       {
         id: 'p1',
-        name: '九头相柳_01',
-        avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=128&q=80',
+        name: '玟小六_01',
+        avatar: 'https://upload.wikimedia.org/wikipedia/en/4/4d/Lost_You_Forever_promotional_poster.jpg',
         isBot: true,
         hand: p2Hand,
         isLandlord: false
       },
       {
         id: 'p2',
-        name: '青丘涂山璟_02',
-        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=128&q=80',
+        name: '何惟芳_02',
+        avatar: 'https://upload.wikimedia.org/wikipedia/zh/9/92/%E5%9B%BD%E8%89%B2%E8%8A%B3%E5%8D%8E%E6%B5%B7%E6%8A%A5.jpg',
         isBot: true,
         hand: p3Hand,
         isLandlord: false

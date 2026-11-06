@@ -42,12 +42,12 @@ export const ChatView: React.FC = () => {
   ];
 
   const onlinePurpleRiceUsers = [
-    { name: '紫约星河巡查使', region: '北京分会', badge: '管理员', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=128&q=80' },
-    { name: '夭夭的九尾狐', region: '浙江分会', badge: '长相思剧粉', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=128&q=80' },
-    { name: '盛唐紫牡丹', region: '陕西分会', badge: '芳华见证官', avatar: 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=128&q=80' },
-    { name: '佟年小鱿鱼', region: '上海分会', badge: '亲爱的高级粉', avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=128&q=80' },
-    { name: '颜淡戏菡萏', region: '四川分会', badge: '沉香仙子', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=128&q=80' },
-    { name: '黄瀛子的小摩托', region: '广东分会', badge: '要久久爱粉', avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=128&q=80' }
+    { name: '紫约星河巡查使', region: '北京分会', badge: '管理员', avatar: 'https://upload.wikimedia.org/wikipedia/en/4/4d/Lost_You_Forever_promotional_poster.jpg' },
+    { name: '夭夭的九尾狐', region: '浙江分会', badge: '长相思剧粉', avatar: 'https://upload.wikimedia.org/wikipedia/zh/9/92/%E5%9B%BD%E8%89%B2%E8%8A%B3%E5%8D%8E%E6%B5%B7%E6%8A%A5.jpg' },
+    { name: '盛唐紫牡丹', region: '陕西分会', badge: '芳华见证官', avatar: 'https://upload.wikimedia.org/wikipedia/en/6/61/Xiangmichenchen.jpg' },
+    { name: '佟年小鱿鱼', region: '上海分会', badge: '亲爱的高级粉', avatar: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Go_Go_Squid%21.jpg' },
+    { name: '颜淡戏菡萏', region: '四川分会', badge: '沉香仙子', avatar: 'https://upload.wikimedia.org/wikipedia/en/6/61/Immortal_Samsara.jpg' },
+    { name: '承欢相伴', region: '广东分会', badge: '承欢记粉', avatar: 'https://upload.wikimedia.org/wikipedia/zh/5/53/Best_Choice_Ever_%28%E6%89%BF%E6%AC%A2%E8%AE%B0%29.jpeg' }
   ];
 
   const fetchMessages = async (ch: string) => {
@@ -84,6 +84,7 @@ export const ChatView: React.FC = () => {
   const handleSendMessage = (content: string, type: 'text' | 'sticker' = 'text') => {
     if (!content.trim()) return;
 
+    const fallbackAvatar = 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Yang_Zi_at_Ryo_band_promotion%2C_Wuhan_of_China%2C_12_April_2019.jpg';
     const payload = {
       type: 'chat_message',
       channel: currentChannel,
@@ -91,7 +92,7 @@ export const ChatView: React.FC = () => {
       messageType: type,
       userId: profile?.id || 'user_current',
       name: profile?.nickname || '星河小紫米',
-      avatar: profile?.avatar || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80'
+      avatar: profile?.avatar || fallbackAvatar
     };
 
     socket.send(payload);
@@ -102,7 +103,7 @@ export const ChatView: React.FC = () => {
       channel: currentChannel,
       senderId: profile?.id || 'user_current',
       senderName: profile?.nickname || '星河小紫米',
-      senderAvatar: profile?.avatar || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80',
+      senderAvatar: profile?.avatar || fallbackAvatar,
       senderRegion: profile?.region || '全国紫米大厅',
       senderBadge: profile?.badges[0] || '紫米',
       content: content.trim(),

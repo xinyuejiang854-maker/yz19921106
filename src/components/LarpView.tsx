@@ -114,10 +114,16 @@ export const LarpView: React.FC = () => {
     }
 
     const botId = `bot_${Date.now()}`;
+    const botAvatars = [
+      'https://upload.wikimedia.org/wikipedia/en/4/4d/Lost_You_Forever_promotional_poster.jpg',
+      'https://upload.wikimedia.org/wikipedia/zh/9/92/%E5%9B%BD%E8%89%B2%E8%8A%B3%E5%8D%8E%E6%B5%B7%E6%8A%A5.jpg',
+      'https://upload.wikimedia.org/wikipedia/en/6/61/Xiangmichenchen.jpg',
+      'https://upload.wikimedia.org/wikipedia/en/e/ed/Go_Go_Squid%21.jpg'
+    ];
     const newBot: LarpPlayer = {
       id: botId,
       name: botNames[currentRoom.players.length % botNames.length],
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=128&q=80',
+      avatar: botAvatars[currentRoom.players.length % botAvatars.length],
       roleId: availableRole.id,
       roleName: availableRole.name,
       roleDescription: availableRole.title,
@@ -158,7 +164,7 @@ export const LarpView: React.FC = () => {
       updatedPlayers.push({
         id: myId,
         name: profile?.nickname || '星河小紫米',
-        avatar: profile?.avatar || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=128&q=80',
+        avatar: profile?.avatar || 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Yang_Zi_at_Ryo_band_promotion%2C_Wuhan_of_China%2C_12_April_2019.jpg',
         roleId: role.id,
         roleName: role.name,
         roleDescription: role.title,

@@ -40,7 +40,7 @@ const store: AppStore = {
       id: 'user_current',
       username: 'purple_star',
       nickname: '星河小紫米',
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Yang_Zi_at_Ryo_band_promotion%2C_Wuhan_of_China%2C_12_April_2019.jpg',
       region: '北京紫米分会',
       bio: '与紫同行，未来可期！陪伴小猴紫的第 2860 天 ✨',
       points: 1314,
@@ -55,7 +55,7 @@ const store: AppStore = {
       id: 'user_admin',
       username: 'admin_zi',
       nickname: '紫约星河巡查使 (管理员)',
-      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=256&q=80',
+      avatar: 'https://upload.wikimedia.org/wikipedia/en/4/4d/Lost_You_Forever_promotional_poster.jpg',
       region: '总会管理员',
       bio: '紫约星河社区守护员，愿守护每一个紫米的星愿。',
       points: 99999,
@@ -75,29 +75,29 @@ const store: AppStore = {
   photos: [
     {
       id: 'photo_1',
-      title: '《长相思》小夭月下绝美回眸',
-      url: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80',
+      title: '《长相思》小夭 / 玟小六 官方剧照',
+      url: 'https://upload.wikimedia.org/wikipedia/en/4/4d/Lost_You_Forever_promotional_poster.jpg',
       category: '剧照',
       author: '夭夭的九尾狐',
       authorId: 'u_101',
       status: 'approved',
-      likes: 521,
+      likes: 1314,
       likedBy: ['user_current'],
       comments: [
-        { id: 'c1', author: '小猴紫的大粉', authorAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=128&q=80', content: '小夭眼神太有戏了，百看不厌！', createdAt: '10分钟前' }
+        { id: 'c1', author: '小猴紫的大粉', authorAvatar: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Yang_Zi_at_Ryo_band_promotion%2C_Wuhan_of_China%2C_12_April_2019.jpg', content: '小夭眼神太有戏了，百看不厌！', createdAt: '10分钟前' }
       ],
       createdAt: '2026-11-05',
       tags: ['长相思', '小夭', '剧照大片']
     },
     {
       id: 'photo_2',
-      title: '《国色芳华》何惟芳盛唐莳花生图',
-      url: 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1200&q=80',
+      title: '《国色芳华》何惟芳盛唐莳花官方海报',
+      url: 'https://upload.wikimedia.org/wikipedia/zh/9/92/%E5%9B%BD%E8%89%B2%E8%8A%B3%E5%8D%8E%E6%B5%B7%E6%8A%A5.jpg',
       category: '剧照',
       author: '盛唐紫牡丹',
       authorId: 'u_102',
       status: 'approved',
-      likes: 688,
+      likes: 988,
       likedBy: [],
       comments: [],
       createdAt: '2026-11-04',
@@ -105,38 +105,94 @@ const store: AppStore = {
     },
     {
       id: 'photo_3',
-      title: '微博之夜紫色高定星光裙饭拍',
-      url: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80',
+      title: '杨紫线下品牌活动现场绝美生图',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Yang_Zi_at_Ryo_band_promotion%2C_Wuhan_of_China%2C_12_April_2019.jpg',
       category: '活动生图',
       author: '星芒摄影小紫米',
       authorId: 'u_103',
       status: 'approved',
-      likes: 892,
+      likes: 1520,
       likedBy: ['user_current'],
       comments: [],
       createdAt: '2026-11-03',
-      tags: ['红毯活动', '紫礼服', '美神降临']
+      tags: ['线下活动', '生图大片', '美神降临']
     },
     {
       id: 'photo_4',
-      title: '饭制水彩手绘：葡萄锦觅与灵修花海',
-      url: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80',
-      category: '饭制手绘',
+      title: '《香蜜沉沉烬如霜》花界锦觅仙气剧照',
+      url: 'https://upload.wikimedia.org/wikipedia/en/6/61/Xiangmichenchen.jpg',
+      category: '剧照',
       author: '绘梦小紫',
       authorId: 'u_104',
       status: 'approved',
-      likes: 412,
+      likes: 888,
       likedBy: [],
       comments: [],
       createdAt: '2026-11-02',
-      tags: ['香蜜沉沉烬如霜', '锦觅', '水彩同人']
+      tags: ['香蜜沉沉烬如霜', '锦觅', '经典名场面']
+    },
+    {
+      id: 'photo_5',
+      title: '《亲爱的，热爱的》天才萝莉佟年',
+      url: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Go_Go_Squid%21.jpg',
+      category: '剧照',
+      author: '佟年小甜鱿',
+      authorId: 'u_105',
+      status: 'approved',
+      likes: 765,
+      likedBy: [],
+      comments: [],
+      createdAt: '2026-11-01',
+      tags: ['亲爱的热爱的', '佟年', '甜愈经典']
+    },
+    {
+      id: 'photo_6',
+      title: '《承欢记》麦承欢清醒大女主海报',
+      url: 'https://upload.wikimedia.org/wikipedia/zh/5/53/Best_Choice_Ever_%28%E6%89%BF%E6%AC%A2%E8%AE%B0%29.jpeg',
+      category: '剧照',
+      author: '独立承欢',
+      authorId: 'u_106',
+      status: 'approved',
+      likes: 654,
+      likedBy: [],
+      comments: [],
+      createdAt: '2026-10-30',
+      tags: ['承欢记', '麦承欢', '都市大女主']
+    },
+    {
+      id: 'photo_7',
+      title: '《沉香如屑·沉香重华》四叶菡萏颜淡官方剧照',
+      url: 'https://upload.wikimedia.org/wikipedia/en/6/61/Immortal_Samsara.jpg',
+      category: '剧照',
+      author: '菡萏香消',
+      authorId: 'u_107',
+      status: 'approved',
+      likes: 920,
+      likedBy: [],
+      comments: [],
+      createdAt: '2026-10-28',
+      tags: ['沉香如屑', '颜淡', '四叶菡萏', '仙侠虐恋']
+    },
+    {
+      id: 'photo_8',
+      title: '《余生，请多指教》林之校大提琴暖心剧照',
+      url: 'https://upload.wikimedia.org/wikipedia/zh/5/55/The_oath_of_love_official_poster.jpg',
+      category: '剧照',
+      author: '大提琴的指尖',
+      authorId: 'u_108',
+      status: 'approved',
+      likes: 830,
+      likedBy: [],
+      comments: [],
+      createdAt: '2026-10-25',
+      tags: ['余生请多指教', '林之校', '暖心治愈']
     }
   ],
   wishes: [
     {
       id: 'w_1',
       author: '紫米守候者',
-      authorAvatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=128&q=80',
+      authorAvatar: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Yang_Zi_at_Ryo_band_promotion%2C_Wuhan_of_China%2C_12_April_2019.jpg',
       category: '生日祝福',
       content: '小猴紫 11.06 生日快乐！愿你岁岁常欢愉，万事皆胜意，无论走多远，紫米永远是你的后盾！💜',
       likes: 1106,
@@ -147,7 +203,7 @@ const store: AppStore = {
     {
       id: 'w_2',
       author: '长相思思无涯',
-      authorAvatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=128&q=80',
+      authorAvatar: 'https://upload.wikimedia.org/wikipedia/en/4/4d/Lost_You_Forever_promotional_poster.jpg',
       category: '新剧大爆',
       content: '预祝小猴紫每一部新剧收视长虹！国色芳华、青簪行、下一部作品永远大爆！期待演员杨紫闪闪发光！✨',
       likes: 688,
@@ -158,7 +214,7 @@ const store: AppStore = {
     {
       id: 'w_3',
       author: '佟年的小猫咪',
-      authorAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=128&q=80',
+      authorAvatar: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Go_Go_Squid%21.jpg',
       category: '平安顺遂',
       content: '拍戏一定要照顾好自己，注意保暖和休息，健健康康，开开心心，我们陪你走过每一个春夏秋冬！',
       likes: 520,
@@ -173,7 +229,7 @@ const store: AppStore = {
       channel: 'national',
       senderId: 'u_sys',
       senderName: '星河引路人 (系统)',
-      senderAvatar: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=128&q=80',
+      senderAvatar: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Yang_Zi_at_Ryo_band_promotion%2C_Wuhan_of_China%2C_12_April_2019.jpg',
       senderRegion: '紫约星河总控',
       senderBadge: '星河官方',
       content: '欢迎来到「紫约星河 ZI LAND」！杨紫专属粉丝星河已连接，与全国紫米一起点亮生日星芒！💜',
@@ -185,7 +241,7 @@ const store: AppStore = {
       channel: 'national',
       senderId: 'u_101',
       senderName: '夭夭的九尾狐',
-      senderAvatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=128&q=80',
+      senderAvatar: 'https://upload.wikimedia.org/wikipedia/en/4/4d/Lost_You_Forever_promotional_poster.jpg',
       senderRegion: '浙江紫米分会',
       senderBadge: '长相思剧粉',
       content: '姐妹们好呀！今天生日应援打卡了吗？相册里新传了超美剧照！',
@@ -197,7 +253,7 @@ const store: AppStore = {
       channel: 'national',
       senderId: 'u_102',
       senderName: '佟年小鱿鱼',
-      senderAvatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=128&q=80',
+      senderAvatar: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Go_Go_Squid%21.jpg',
       senderRegion: '上海紫米分会',
       senderBadge: '亲爱的高级粉',
       content: '打卡啦！刚去游戏大厅玩了谁是卧底和麻将，大家快来开房呀~',
@@ -224,9 +280,9 @@ const demoLarpRoom = {
   status: 'discuss',
   players: [
     { id: 'user_admin', name: '紫约星河巡查使', avatar: store.users['user_admin'].avatar, roleId: 'role_qiangxuan', roleName: '玱玹', isHost: true, isReady: true },
-    { id: 'bot_xiaoliu', name: '紫米夭夭_01', avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=128&q=80', roleId: 'role_xiaoliu', roleName: '玟小六', isHost: false, isReady: true, isBot: true },
-    { id: 'bot_jing', name: '青丘璟心_02', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=128&q=80', roleId: 'role_jing', roleName: '涂山璟', isHost: false, isReady: true, isBot: true },
-    { id: 'bot_xiangliu', name: '九头相柳_03', avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=128&q=80', roleId: 'role_xiangliu', roleName: '相柳', isHost: false, isReady: true, isBot: true }
+    { id: 'bot_xiaoliu', name: '紫米夭夭_01', avatar: 'https://upload.wikimedia.org/wikipedia/en/4/4d/Lost_You_Forever_promotional_poster.jpg', roleId: 'role_xiaoliu', roleName: '玟小六', isHost: false, isReady: true, isBot: true },
+    { id: 'bot_jing', name: '青丘璟心_02', avatar: 'https://upload.wikimedia.org/wikipedia/zh/9/92/%E5%9B%BD%E8%89%B2%E8%8A%B3%E5%8D%8E%E6%B5%B7%E6%8A%A5.jpg', roleId: 'role_jing', roleName: '涂山璟', isHost: false, isReady: true, isBot: true },
+    { id: 'bot_xiangliu', name: '九头相柳_03', avatar: 'https://upload.wikimedia.org/wikipedia/en/6/61/Immortal_Samsara.jpg', roleId: 'role_xiangliu', roleName: '相柳', isHost: false, isReady: true, isBot: true }
   ],
   clues: LARP_SCRIPTS[0].clues,
   votes: {},
@@ -480,11 +536,11 @@ app.post('/api/larp/rooms', (req, res) => {
 // 8. Leaderboard & Badges
 app.get('/api/leaderboard', (req, res) => {
   const mockRanking = [
-    { rank: 1, name: '小猴紫的大元老', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=128&q=80', region: '北京紫米分会', points: 9860, signDays: 120, badge: '初代紫米' },
-    { rank: 2, name: '长相思思小夭', avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=128&q=80', region: '浙江紫米分会', points: 8750, signDays: 98, badge: '长相思剧粉头子' },
-    { rank: 3, name: '国色芳华何惟芳', avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=128&q=80', region: '盛唐紫米分会', points: 7920, signDays: 85, badge: '国色芳华见证官' },
+    { rank: 1, name: '小猴紫的大元老', avatar: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Yang_Zi_at_Ryo_band_promotion%2C_Wuhan_of_China%2C_12_April_2019.jpg', region: '北京紫米分会', points: 9860, signDays: 120, badge: '初代紫米' },
+    { rank: 2, name: '长相思思小夭', avatar: 'https://upload.wikimedia.org/wikipedia/en/4/4d/Lost_You_Forever_promotional_poster.jpg', region: '浙江紫米分会', points: 8750, signDays: 98, badge: '长相思剧粉头子' },
+    { rank: 3, name: '国色芳华何惟芳', avatar: 'https://upload.wikimedia.org/wikipedia/zh/9/92/%E5%9B%BD%E8%89%B2%E8%8A%B3%E5%8D%8E%E6%B5%B7%E6%8A%A5.jpg', region: '盛唐紫米分会', points: 7920, signDays: 85, badge: '国色芳华见证官' },
     { rank: 4, name: '星河小紫米 (我)', avatar: store.users['user_current'].avatar, region: store.users['user_current'].region, points: store.users['user_current'].points, signDays: store.users['user_current'].signDays, badge: '星愿守护者' },
-    { rank: 5, name: '佟年的小猫咪', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=128&q=80', region: '广东紫米分会', points: 5200, signDays: 60, badge: '亲爱的高级粉' }
+    { rank: 5, name: '佟年的小猫咪', avatar: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Go_Go_Squid%21.jpg', region: '广东紫米分会', points: 5200, signDays: 60, badge: '亲爱的高级粉' }
   ];
   res.json({ success: true, rankings: mockRanking, myPoints: store.users['user_current'].points });
 });

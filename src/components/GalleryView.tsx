@@ -11,8 +11,10 @@ import {
   Send,
   Flag,
   CheckCircle,
-  Tag
+  Tag,
+  Sparkles
 } from 'lucide-react';
+import { AUTHENTIC_DRAMA_STILLS } from '../data/yangziMedia';
 
 export const GalleryView: React.FC = () => {
   const { profile, showToast } = useApp();
@@ -369,6 +371,33 @@ export const GalleryView: React.FC = () => {
                     className="w-full px-3.5 py-2 rounded-xl bg-purple-950/60 border border-purple-500/30 text-white text-sm focus:outline-none focus:border-purple-400"
                   />
                 </div>
+                {/* Quick picker for authentic drama stills */}
+                <div className="pt-2">
+                  <div className="text-[11px] text-purple-300 mb-1.5 flex items-center gap-1">
+                    <Sparkles className="w-3 h-3 text-fuchsia-300" />
+                    <span>或快速选用杨紫经典影视官方高清剧照：</span>
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5 max-h-36 overflow-y-auto p-1 bg-purple-950/30 rounded-xl border border-purple-500/20">
+                    {AUTHENTIC_DRAMA_STILLS.map((still) => (
+                      <button
+                        type="button"
+                        key={still.id}
+                        onClick={() => {
+                          setUploadTitle(still.title);
+                          setUploadUrl(still.url);
+                          setUploadCategory(still.category);
+                          setUploadTags(still.tags.join(', '));
+                          showToast(`已填入【${still.drama}】官方剧照`, 'info');
+                        }}
+                        className="flex items-center gap-1.5 p-1 rounded-lg bg-purple-900/30 hover:bg-purple-800/40 border border-purple-500/20 text-left transition-all"
+                      >
+                        <img src={still.url} alt={still.drama} className="w-7 h-7 rounded object-cover shrink-0" />
+                        <span className="text-[10px] text-purple-200 truncate">{still.drama}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
                 {uploadUrl && (
                   <div className="mt-2 h-36 rounded-xl overflow-hidden border border-purple-500/30">
                     <img src={uploadUrl} alt="预览" className="w-full h-full object-cover" />

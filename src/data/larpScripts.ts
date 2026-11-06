@@ -32,7 +32,7 @@ export const LARP_SCRIPTS: LarpScriptDefinition[] = [
     id: 'script_changxiangsi',
     title: '《皓月长相思：清水镇失窃迷案》',
     subtitle: '古装仙侠 / 阵营推理 / 情感抉择 (4-6人)',
-    cover: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80',
+    cover: 'https://upload.wikimedia.org/wikipedia/en/4/4d/Lost_You_Forever_promotional_poster.jpg',
     description: '清水镇医馆「回春堂」内，镇馆灵药「九转还魂丹」于月圆之夜离奇失窃，现场留下一瓣紫金神莲与不明足迹。玟小六、涂山璟、相柳、玱玹各自怀揣秘密齐聚于此……',
     roles: [
       { id: 'role_xiaoliu', name: '玟小六', title: '回春堂执业医师', secret: '实为皓苓大王姬小夭，昨夜曾悄悄潜入丹房取药救治受伤的小白蛇。', objective: '查明真凶，保全回春堂众人安危，隐藏自己的大王姬身份。' },
@@ -54,7 +54,7 @@ export const LARP_SCRIPTS: LarpScriptDefinition[] = [
     id: 'script_guose',
     title: '《芳华盛宴：牡丹奇香迷踪》',
     subtitle: '盛唐经商 / 悬疑谍影 / 牡丹奇香 (4-6人)',
-    cover: 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=600&q=80',
+    cover: 'https://upload.wikimedia.org/wikipedia/zh/9/92/%E5%9B%BD%E8%89%B2%E8%8A%B3%E5%8D%8E%E6%B5%B7%E6%8A%A5.jpg',
     description: '长安名动天下的牡丹名园内，御赐绝品「国色金腰带」一夜之间枯萎变色，花蕊中赫然发现剧毒乌头散……培育大师何惟芳、蒋长扬与京城贵客卷入风波。',
     roles: [
       { id: 'role_heweifang', name: '何惟芳', title: '百花匠人 / 芳华坊主', secret: '牡丹名花被投毒前，曾收到神秘来信索要秘传莳花谱。', objective: '拯救牡丹名品，找出企图陷害芳华坊的幕后黑手。' },

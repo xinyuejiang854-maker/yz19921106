@@ -24,7 +24,7 @@ export const HomeView: React.FC = () => {
       year: '2023 - 2024',
       quote: '“有力自保、有人相依、有处可去，愿你一世安乐无忧。”',
       tag: '爆款仙侠大剧 · 腾讯视频年度剧王',
-      cover: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/4/4d/Lost_You_Forever_promotional_poster.jpg',
       badge: '大王姬 / 回春堂六哥'
     },
     {
@@ -33,7 +33,7 @@ export const HomeView: React.FC = () => {
       year: '2025 - 2026',
       quote: '“商海浮沉，匠心不改；芳华绝代，自立盛唐。”',
       tag: '盛唐经商传奇 · 巨制品质爆款',
-      cover: 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=80',
+      cover: 'https://upload.wikimedia.org/wikipedia/zh/9/92/%E5%9B%BD%E8%89%B2%E8%8A%B3%E5%8D%8E%E6%B5%B7%E6%8A%A5.jpg',
       badge: '百花匠人 / 芳华坊主'
     },
     {
@@ -42,7 +42,7 @@ export const HomeView: React.FC = () => {
       year: '2018',
       quote: '“繁花似锦觅安宁，淡云流水度此生。”',
       tag: '国民现象级仙侠爆款 · 演技封神',
-      cover: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/6/61/Xiangmichenchen.jpg',
       badge: '花界少主 / 水神长女'
     },
     {
@@ -51,17 +51,17 @@ export const HomeView: React.FC = () => {
       year: '2019',
       quote: '“一辈子那么长，我都给你。”',
       tag: '全民甜愈热潮 · 现男友与鱿小鱼',
-      cover: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Go_Go_Squid%21.jpg',
       badge: '天才学霸 / 萝莉歌手'
     },
     {
-      title: '《要久久爱》',
-      role: '黄瀛子',
+      title: '《承欢记》',
+      role: '麦承欢',
       year: '2024',
-      quote: '“十七岁时我们以为的永远，现在依然滚烫。”',
-      tag: '青春怀旧治愈 · 温暖现实主义',
-      cover: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80',
-      badge: '航天城六人组'
+      quote: '“承欢父母，更要先承欢自己，做独立清醒的大女主。”',
+      tag: '都市情感大剧 · 央视八套收视冠军',
+      cover: 'https://upload.wikimedia.org/wikipedia/zh/5/53/Best_Choice_Ever_%28%E6%89%BF%E6%AC%A2%E8%AE%B0%29.jpeg',
+      badge: '独立大女主'
     },
     {
       title: '《沉香如屑·沉香重华》',
@@ -69,7 +69,7 @@ export const HomeView: React.FC = () => {
       year: '2022',
       quote: '“半生执念半生空，菡萏一瓣护苍生。”',
       tag: '四海八荒绝恋 · 上古四叶菡萏',
-      cover: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+      cover: 'https://upload.wikimedia.org/wikipedia/en/6/61/Immortal_Samsara.jpg',
       badge: '四叶菡萏仙子'
     }
   ];
