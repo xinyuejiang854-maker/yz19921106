@@ -1,0 +1,6 @@
+{
+  "name": "紫约星河 ZI LAND - 杨紫粉丝专属社交娱乐星河",
+  "description": "梦幻紫色星河主题杨紫粉丝社交娱乐社区，涵盖生日应援、星光相册、星愿祝福墙、全国实时聊天室、多人剧本杀与丰富联机游戏大厅。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

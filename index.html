@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>紫约星河 ZI LAND - 杨紫粉丝专属社交娱乐星河</title>
+    <meta name="description" content="梦幻紫色星河主题杨紫粉丝社交娱乐社区，涵盖生日应援、星光相册、星愿祝福墙、全国实时聊天室、多人剧本杀与丰富联机游戏大厅。" />
+    <meta property="og:title" content="紫约星河 ZI LAND - 杨紫粉丝专属社交娱乐星河" />
+    <meta property="og:description" content="梦幻紫色星河主题杨紫粉丝社交娱乐社区，涵盖生日应援、星光相册、星愿祝福墙、全国实时聊天室、多人剧本杀与丰富联机游戏大厅。" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Serif+SC:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        // Gracefully ignore Vite HMR WebSocket connection errors as specified by environment rules
+        var origConsoleError = console.error;
+        console.error = function() {
+          var args = Array.prototype.slice.call(arguments);
+          var text = args.map(function(a) {
+            return (a && (a.stack || a.message || String(a))) || '';
+          }).join(' ');
+          if (
+            text.indexOf('@vite/client') !== -1 ||
+            text.indexOf('WebSocket closed without opened') !== -1 ||
+            text.indexOf('vite-hmr') !== -1 ||
+            text.indexOf('failed to connect to WebSocket') !== -1
+          ) {
+            return;
+          }
+          origConsoleError.apply(console, args);
+        };
+
+        window.addEventListener('unhandledrejection', function(event) {
+          var reason = event.reason;
+          var text = (reason && (reason.stack || reason.message || String(reason))) || '';
+          if (
+            text.indexOf('WebSocket') !== -1 ||
+            text.indexOf('@vite/client') !== -1 ||
+            text.indexOf('vite-hmr') !== -1
+          ) {
+            event.preventDefault();
+            if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+          }
+        }, true);
+
+        window.addEventListener('error', function(event) {
+          var text = event.message || (event.error && (event.error.stack || event.error.message)) || '';
+          if (
+            text.indexOf('WebSocket') !== -1 ||
+            text.indexOf('@vite/client') !== -1 ||
+            (event.filename && event.filename.indexOf('@vite/client') !== -1)
+          ) {
+            event.preventDefault();
+            if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+          }
+        }, true);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
