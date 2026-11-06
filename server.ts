@@ -508,44 +508,7 @@ app.post('/api/moderation/report', (req, res) => {
 const server = http.createServer(app);
 
 // WebSocket Server for Multi-User Realtime Synchronization
-const wss = new WebSocketServer({ noServer: true });
-const viteHmrWss = new WebSocketServer({ noServer: true });
-
-viteHmrWss.on('connection', (ws) => {
-  try {
-    ws.send(JSON.stringify({ type: 'connected' }));
-  } catch {}
-  ws.on('message', (data) => {
-    try {
-      const msg = JSON.parse(data.toString());
-      if (msg && msg.type === 'ping') {
-        ws.send(JSON.stringify({ type: 'pong' }));
-      }
-    } catch {}
-  });
-});
-
-server.on('upgrade', (request, socket, head) => {
-  try {
-    const host = request.headers.host || 'localhost:3000';
-    const url = new URL(request.url || '', `http://${host}`);
-    const protocol = (request.headers['sec-websocket-protocol'] || '').toString();
-
-    if (url.pathname === '/ws') {
-      wss.handleUpgrade(request, socket, head, (ws) => {
-        wss.emit('connection', ws, request);
-      });
-    } else if (protocol.includes('vite-hmr') || url.pathname === '/' || url.searchParams.has('token')) {
-      viteHmrWss.handleUpgrade(request, socket, head, (ws) => {
-        viteHmrWss.emit('connection', ws, request);
-      });
-    } else {
-      socket.destroy();
-    }
-  } catch (err) {
-    socket.destroy();
-  }
-});
+const wss = new WebSocketServer({ server, path: '/ws' });
 
 interface ConnectedClient {
   ws: WebSocket;
@@ -686,10 +649,7 @@ function broadcastLarpRoom(roomId: string, payload: any) {
 if (!isProd) {
   const { createServer: createViteServer } = await import('vite');
   const vite = await createViteServer({
-    server: {
-      middlewareMode: true,
-      hmr: process.env.DISABLE_HMR === 'true' ? false : { server }
-    },
+    server: { middlewareMode: true },
     appType: 'spa'
   });
   app.use(vite.middlewares);
